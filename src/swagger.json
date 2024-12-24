@@ -1,0 +1,57 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+      "title": "API Ecommerce",
+      "version": "1.0.0",
+      "description": "Documentação da API Ecommerce"
+    },
+    "servers": [
+      {
+        "url": "http://localhost:3000"
+      }
+    ],
+    "paths": {
+      "/api/users": {
+        "get": {
+          "summary": "Listar todos os usuários",
+          "responses": {
+            "200": {
+              "description": "Lista de usuários",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/User"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "components": {
+      "schemas": {
+        "User": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "firstname": {
+              "type": "string"
+            },
+            "surname": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+  

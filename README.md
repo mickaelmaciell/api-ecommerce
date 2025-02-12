@@ -185,11 +185,6 @@ npm test
 
 ---
 
----
-## 🥷 **Equipe**
-- Mickael do Nascimento Maciel
-- Ana Karoline Freitas Nobrega
-- Abraão Alves do Nascimento
 
 ---
 Desenvolvido com ❤️ para fins de aprendizado!
